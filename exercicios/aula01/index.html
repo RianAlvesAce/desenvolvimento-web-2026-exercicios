@@ -3,156 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vagner Henrique da Silva - Página de Apresentação</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Rian Alves - Desenvolvedor Full-Stack</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Oswald", sans-serif;
+      color: #171b39;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 870px;
-      margin: 0 auto;
-      padding: 25px;
-      line-height: 1.6;
-      background-color: #292626;
-      color: #fff;
+      background-image: url(https://images.pexels.com/photos/35787175/pexels-photo-35787175.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+
     }
+    
+    body, main {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+
     header {
+      margin: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      border-radius: 1rem 5rem !important;
+    }
+
+    .box {
+      border-radius: 1rem ;
+      border: 3px solid #fff;
+      background-color:rgba(255, 255, 255, 0.412);
+      backdrop-filter: blur(25px) contrast(100%) opacity(50%) saturate(100%);
+    }
+
+    .boxContainer {
+      display: flex;
+      justify-content: center;
+      gap: 25%;
+    }
+
+    header p#aboutText {
+      width: 75%;
+    }
+
+    img#imageProfile {
+      width: 20%;
+      border-radius: 1rem 5rem;
+    }
+
+    header aside {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    section#hobbiesObjectives div {
+      width: 25%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .boxContainer .box h2 {
       text-align: center;
-      padding: 3px 0;
-      border-bottom: 2px solid #333;
     }
-    img {
-      border-radius: 50%;
-      border: 3px solid #850303;
+    
+    section#skills {
+      display: flex;
+      justify-content: center;
     }
-    section {
-      margin: 30px 0;
+    
+    section#skills div {
+      padding: 2rem;
+      width: 25%;
     }
-    table {
+
+    section#skills table {
       width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #505050;
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #850303;
-      color: #e6e6e6;
-    }
-    footer {
       text-align: center;
-      padding: 20px 0;
-      border-top: 2px solid #333;
-      margin-top: 40px;
-      color: #666;
+      border-collapse: collapse;
+      background-color: rgb(255, 255, 255);
+    }
+    
+    section#skills table th, section#skills table td {
+      border: 1px solid #171b39;
+      margin: 0;
     }
 
-    a {
-      color: #9c2424;
-      text-decoration: none;
+    footer {
+      width: 100%;
+      background-color: #fff;
+      padding: 4rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    a:hover {
-      color: #8b1414;
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
-   <button id="theme-toggle" style="position: fixed; top: 20px; right: 20px; padding: 10px; cursor: pointer; border-radius: 8px;">
-  🌓 Trocar Tema
-   </button>
-  <!-- 
-    TODO: Complete este template com suas informações!
-    
-    INSTRUÇÕES:
-    1. Substitua "Seu Nome" pelo seu nome real
-    2. Substitua a URL da imagem por uma sua (ou use https://via.placeholder.com/150)
-    3. Preencha todas as seções com suas informações reais
-    4. Mantenha a estrutura HTML pedida
-    5. Personalize o CSS se quiser!
-    
-    DICA: Use o DevTools (F12) para ver como ficou!
-  -->
-
-  <header>
-    <h1>Vagner Henrique da Silva</h1>
-    <h2>Engenharia da Computação 💻</h2>
-    <img src="https://media.licdn.com/dms/image/v2/D4E03AQF6gFK6ZM0yNA/profile-displayphoto-scale_200_200/B4EZxTs4NqIgAY-/0/1770930802421?e=1773273600&v=beta&t=Hqas-l6Gm2RXTuClJpNlEgKpXaxgOUws8oefXLZR3KA" alt="Foto de Vagner Henrique da Silva" width="150" height="150">
+  <header class="box">
+    <img id="imageProfile" src="profile-picture.jpg" alt="Foto de Rian Alves">
+    <aside id="">
+      <div id="headerTitle">
+        <h1>Rian Alves</h1>
+        <h2>Estudante de Engenharia da Computação e Estagiario em Desenvolvimento Full-Stack</h2>
+      </div>
+      <div>
+        <h2>Sobre Mim</h2>
+        <p id="aboutText">
+          Olá! 👋 Me chamo Rian. Acadêmico de Engenharia da Computação na Uninassau Recife (3º período). Atualmente, foco meus estudos em desenvolvimento de software e segurança cibernética, buscando aplicar conceitos teóricos em projetos práticos e soluções seguras. 
+        </p>
+      </div>
+    </aside>
   </header>
 
   <main>
-    <section>
-      <h2>Sobre Mim</h2>
-      <p>
-        Meu nome é Vagner Henrique da Silva, estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação. 
-        Tenho interesse em desenvolvimento web, análise de dados e soluções que impactem positivamente a experiência do usuário.
-        Estou em constante aprendizado, buscando aprimorar minhas habilidades técnicas e práticas de programação, além de colaborar em projetos desafiadores.
-      </p>
-
-      <h3>Meus Hobbies</h3>
-      <ul>
-        <li>Tocar instrumentos</li>
-        <li>Jogar vôlei</li>
-        <li>Estudar</li>
-      </ul>
-
-      <h3>Objetivos Profissionais</h3>
-      <ol>
-        <li>Conseguir um estágio</li>
-        <li>Trabalhar e morar no exterior</li>
-        <li>Atuar na área de Engenharia de Dados</li>
-      </ol>
+    <section id="hobbiesObjectives" class="boxContainer">
+      <div class="box">
+        <h2>Objetivos Profissionais</h2>
+        <ol>
+          <li>Atingir a minha estabilidade com a tecnologia &#128187;</li>
+          <li>Alcançar uma oportunidade no exterior &#128507;</li>
+          <li>Me aprofundar em Blue Team e Red Team &#128309; &#128308;</li>
+        </ol>
+      </div>
+      <div class="box">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Praticar Taekwondo &#129355;</li>
+          <li>Jogar video game &#127918;</li>
+          <li>Ler quando me sobra tempo &#128214;</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Habilidades Técnicas</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Habilidade</th>
-            <th>Nível</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Python</td>
-            <td>Intermediário</td>
-          </tr>
-          <tr>
-            <td>Edição de imagem</td>
-            <td>Intermediário</td>
-          </tr>
-          <tr>
-            <td>HTML</td>
-            <td>Iniciante</td>
-          </tr>
-          <tr>
-            <td>SQL</td>
-            <td>Intermediário</td>
-          </tr>
-          <tr>
-            <td>Inglês</td>
-            <td>Intermediário</td>
-          </tr>
-        </tbody>
-      </table>
+    <section id="skills" class="boxContainer">
+      <div class="box">
+        <h2>Habilidades Técnicas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Habilidade</th>
+              <th>Nível</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Avançado</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Avançado</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Avançado</td>
+            </tr>
+            <tr>
+              <td>Typescript</td>
+              <td>Intermediário</td>
+            </tr>
+            <tr>
+              <td>Git</td>
+              <td>Intermediário</td>
+            </tr>
+            <tr>
+              <td>C#</td>
+              <td>Intermediário</td>
+            </tr>
+            <tr>
+              <td>SQL</td>
+              <td>Básico</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Básico</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="box">
+        <h2>Contato</h2>
+        <ul>
+          <li>Email: <a href="mailto:silent.dev007@gmail.com">silent.dev007@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/RianAlvesAce" target="_blank">@RianAlvesAce</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/rian-alvespf/" target="_blank">Rian Pedro</a></li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Contato</h2>
-      <ul>
-        <li>Email: <a href="mailto:vagnerhenriquesilva0803@gmail.com">vagnerhenriquesilva0803@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/VagnerH" target="_blank">@VagnerH</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/vagner-henrique-da-silva-4b07823ab/" target="_blank">Vagner Henrique da Silva</a></li>
-      </ul>
-    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Vagner Henrique. Feito com ❤️ no curso de Desenvolvimento Web - UNINASSAU.</p>
+    <p>&copy; Rian Alves 2026 - Feito com ❤️ no curso de Desenvolvimento Web - UNINASSAU</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
